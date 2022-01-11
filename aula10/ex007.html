@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+            text-align: center;
+            background: hsla(177, 90%, 45%, 0.836);
+        }
+        input{
+            font: normal 18pt arial;
+            width: 100px;
+            
+        }
+        input#btn{
+            background:blue;
+            border-radius: 50%;
+
+        }
+
+
+        div#res{
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Soma de valores</h1>
+    <input type="number" name="txtn1" id="txtn1" > +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="somar" id="btn" onclick="somar()">
+    <div id="res">O resultado é....</div>
+
+
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+         function somar (){
+        var txtn1 = window.document.getElementById('txtn1')
+        var txtn2 = window.document.getElementById('txtn2')
+        var res = window.document.getElementById('res')
+        var n1 = Number(txtn1.value)
+        var n2 = Number(txtn2.value)
+        var s = n1 + n2
+       
+            res.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${s} </strong>`
+           //3 s < 0 ? res.innerHTML = `O resultado ${s} é um numero negativo` : res.innerHTML = `seu resultado é ${s}`
+        }
+        
+    </script>
+
+</body>
+</html>

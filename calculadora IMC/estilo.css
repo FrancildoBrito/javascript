@@ -1,0 +1,32 @@
+body{
+   background-image:linear-gradient(to right, rgb(103, 103, 172), rgba(181, 181, 236, 0.876));
+    font: normal 15pt Arial;
+    }
+    
+    header{
+     color: white;
+     text-align: center;
+    }
+    
+    section{
+        text-align: center;
+        background: white;
+        border-radius: 10px;
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
+    }
+    p{
+        text-align: center;
+    }
+    
+    footer{
+        padding-top: 20px;
+        text-align: center;
+        font-style: italic;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }

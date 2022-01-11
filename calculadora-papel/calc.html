@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iprint Decor/caluladora</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <header><div id="cabeca">
+ 
+    </div>
+        <h1>Calcule quantos rolos irá precisar:</h1>
+    </header>
+    <section>
+       
+        <div>
+            
+            <select name="medRolo" id="medRolo">
+                <option value="0">Slecione as medidas do rolo</option>
+                <option value="1">0,58 x 1,50M</option>
+                <option value="2">0,58 x 2,50M</option>
+                <option value="3">0,58 x 3,00M</option>
+                <option value="4">0,58 x 3,50M</option>
+    
+            </select>
+            <p>Comprimento da parede em M: <input type="number" name="larP" id="largP"></p>
+            <p>Altura da parede em M: <input type="number" name="altP" id="altP"></p>
+            <p><input type="button" value="Mostrar resultado" onclick="mostrar()"></p>
+        </div>
+        <div id="res">
+            <p>Aguardando resultado....</p>
+        </div>
+    </section>
+    <footer><a href=>&copy;iprint Decor</a></footer>
+    <script src="calc.js">
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt("Qual o seu nome?")
+        var sm = Number(window.prompt("salario?"));
+        window.alert(`Olá ${nome}, irei contar as letras de seu nome!!`);
+        document.write(`Olá, ${nome}! seu nome tem ${nome.length} letras e você ganha ${sm.toLocaleString("pt-BR", {style:"currency", currency : "BRL"})}`)
+    </script>
+</body>
+</html>
