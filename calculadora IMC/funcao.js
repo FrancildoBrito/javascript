@@ -8,24 +8,29 @@ function calcular() {
     let imc = p / (alt **2)
 
     if(imc >= 18.5 && imc <= 24.9){
-        res.innerHTML = `<p> O seu IMC é de ${imc.toFixed(1)},
+        res.innerHTML = `<p> O seu IMC é de ${imc.toFixed(2)},
          esse valor é considerado NORMAL.</p>`
-         document.body.style.background = 'linear-gradient(to right, green, yellowgreen)'
+         res.style.background= 'green'
+         res.style.color= 'white'
 
     }else if(imc < 30.0){
         res.innerHTML = `<p> O seu IMC é de ${imc.toFixed(1)},
          esse valor é considerado como SOBREPESO!</p>`
-         document.body.style.background = '#cf7004'
+         res.style.background= 'orangered'
+         res.style.color= 'white'
 
     }else if(imc > 30) {
         res.innerHTML = `<p> O seu IMC é de ${imc.toFixed(1)},
         esse valor é considerado como OBESIDADE!</p>`
-        document.body.style.background = 'linear-gradient(to left, red, yellow)'
+        res.style.background= 'red'
+        res.style.color= 'white'
       
     } if(imc < 18.5){
         res.innerHTML = `<p> O seu IMC é de ${imc.toFixed(1)},
          esse valor é considerado como MAGREZA!</p>`
-         document.body.style.background = '#cf7004'
+         res.style.background= 'orangered'
+         res.style.color= 'white'
+
         }
         
    
